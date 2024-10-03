@@ -1,0 +1,117 @@
+.current-hero {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url("https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/backgrounds/greyfade.jpg");
+    background-size: cover;
+    z-index: -20;
+}
+
+/*Hero Video*/
+
+.hero-background {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    pointer-events: none;
+    object-fit: none;
+    z-index: 15;
+}
+
+.hero-background video {
+    position: absolute;
+    width: 1500px;
+    right: 0;
+}
+
+.black-line {
+    width: 400px;
+    height: 300vh;
+    position: absolute;
+    top: -130%;
+    right: 0;
+    background-color: #545a5f;
+    z-index: -10;
+    transform: rotate(45deg);
+}
+
+.hero-attr {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    color: white;
+    text-transform: uppercase;
+    align-items: center;
+}
+
+.hero-info {
+    display: flex;
+    width: 35%;
+    height: 50%;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 20;
+    margin-left: 7%;
+    margin-top: -7%;
+    color: #959595;
+}
+
+.full-history {
+    color: #777777;
+    text-decoration: underline;
+}
+
+.full-history:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.hero-description {
+    color: white;
+    width: 100%;
+}
+
+.hero-description h1 {
+    font-size: 6em;
+}
+
+.hero-description h2 {
+    margin: 0 auto 20px;
+    color: #a5e0f3;
+}
+
+.hero_attack_type {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    color: white;
+    margin-top: -10px;
+}
+
+.hero-complexity {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+.comp {
+    width: 25px;
+    height: 25px;
+    border: 1px solid white;
+    transform: rotate(45deg);
+}
+
+.comp.comp-active {
+    background-color: white;
+}
+
+.hero-abilities {
+    margin: 400px 0 0 600px;
+    position: relative;
+    z-index: 20;
+
+}
